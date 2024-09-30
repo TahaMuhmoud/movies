@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+@import url("https://fonts.cdnfonts.com/css/southam-demo");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Ginger";
+    src: url(/Ginger.otf);
+  }
+  body {
+    @apply w-screen overflow-x-hidden scroll-smooth bg-black text-white;
+  }
+  .scrollbar::-webkit-scrollbar {
+    @apply h-1 w-1;
+  }
+  .scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-primary;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .search-inp {
+    -moz-box-shadow: 0px 0px 54px -11px rgba(0, 0, 0, 1) inset;
+    -webkit-box-shadow: 0px 0px 54px -11px rgba(0, 0, 0, 1) inset;
+    box-shadow: 0px 0px 54px -11px rgba(0, 0, 0, 1) inset;
+  }
+}
